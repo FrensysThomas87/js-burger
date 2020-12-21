@@ -4,7 +4,7 @@ var coupon = document.getElementsByTagName('input')[7];
 var totalPrice = document.getElementById('total-container').getElementsByTagName('span')[0];
 
 var sommaScontata = 0;
-var somma = 0;
+var somma = 3;
 
 //Variabile che mi che mi controlla quanti elementi sono stati selezionati
 var checkedElementsCounter = 0;
@@ -20,7 +20,7 @@ document.getElementsByTagName('button')[0].addEventListener("click", function(){
 burgerName = document.getElementsByTagName('input')[0].value;
 
 //Ad ogni click del pulsante riporto la somma a zero
-somma = 0;
+somma = 3;
 
 
 //Ciclo all'interno delle checkboxes
@@ -48,7 +48,7 @@ if(checkedElementsCounter < 2 || burgerName == '' ){
     if(coupon.value === couponList[x]){
     sommaScontata = somma - (somma / 100) * 20;
     totalPrice.innerText = '$' + sommaScontata + ' con 20% di sconto !!!!';
-    }
+  }
 
 
   }
