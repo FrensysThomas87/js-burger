@@ -1,15 +1,15 @@
 var checkboxes = document.getElementById('checkbox-container').getElementsByTagName('input');
-console.log(checkboxes);
+
 
 var burgerName = document.getElementsByTagName('input')[0];
-console.log(burgerName);
+
 burgerName = document.getElementsByTagName('input')[0].value;
-// console.log(checkboxes);
+
 
 var somma = 0;
 
 document.getElementsByTagName('button')[0].addEventListener("click", function(){
-
+burgerName = document.getElementsByTagName('input')[0].value;
 
 var totalPrice = document.getElementById('total-container').getElementsByTagName('span')[0];
 
@@ -32,12 +32,12 @@ for(var i = 0; i < checkboxes.length; i++){
   //   somma += parseInt(checkboxes[i].value);
   // }
 }
-if(checkedElements < 2){
-  alert('Devi selezionare 2 o più elementi')
+if(checkedElements < 2 || burgerName == '' ){
+  alert('Devi selezionare 2 o più elementi e scrivere il nome dell\'hamburger')
 }else{
   totalPrice.innerText = '$ ' + somma;
 }
-
+console.log(burgerName);
 }
 
 );
