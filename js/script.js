@@ -1,13 +1,9 @@
 var checkboxes = document.getElementById('checkbox-container').getElementsByTagName('input');
-
-
 var burgerName = document.getElementsByTagName('input')[0];
-
-burgerName = document.getElementsByTagName('input')[0].value;
-
 
 var somma = 0;
 
+//Inizio funzione click per pulsante
 document.getElementsByTagName('button')[0].addEventListener("click", function(){
 burgerName = document.getElementsByTagName('input')[0].value;
 
@@ -16,28 +12,27 @@ var totalPrice = document.getElementById('total-container').getElementsByTagName
 //Ad ogni click del pulsante riporto la somma a zero
 somma = 0;
 
-// console.log(somma);
+//Variabile che mi che mi controlla quanti elementi sono stati selezionati
+var checkedElementsCounter = 0;
 
-
-var checkedElements = 0;
-
+//Ciclo all'interno delle checkboxes
 for(var i = 0; i < checkboxes.length; i++){
 
+  //Se ci sono degli elementi selezionati fai la somma e aumenta il contatore
   if(checkboxes[i].checked){
-    checkedElements++;
+    checkedElementsCounter++;
     somma += parseInt(checkboxes[i].value);
 }
-//Qui faccio in modo che la somma venga ricalcolata in base agli elementi chekkati
-  // if(checkboxes[i].checked){
-  //   somma += parseInt(checkboxes[i].value);
-  // }
+
 }
-if(checkedElements < 2 || burgerName == '' ){
+//Se il contatore è minore di due o se non è stato specificato il nome dell'hamburger
+if(checkedElementsCounter < 2 || burgerName == '' ){
   alert('Devi selezionare 2 o più elementi e scrivere il nome dell\'hamburger')
 }else{
   totalPrice.innerText = '$ ' + somma;
 }
-console.log(burgerName);
+
 }
+//Fine funzione click per pulsante
 
 );
