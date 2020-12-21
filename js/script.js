@@ -21,7 +21,7 @@ burgerName = document.getElementsByTagName('input')[0].value;
 
 //Ad ogni click del pulsante riporto la somma a zero
 somma = 3;
-
+var selezionato = false;
 
 //Ciclo all'interno delle checkboxes
 for(var i = 0; i < checkboxes.length; i++){
@@ -36,10 +36,13 @@ for(var i = 0; i < checkboxes.length; i++){
 //Se il contatore è minore di due o se non è stato specificato il nome dell'hamburger manda un alert
 if(checkedElementsCounter < 2 || burgerName == '' ){
   alert('Devi selezionare 2 o più elementi e scrivere il nome dell\'hamburger')
-
+  checkedElementsCounter = 0;
+  totalPrice.innerText = '$3' ;
   // Altrimenti scrivi la somma da spendere
 }else{
   totalPrice.innerText = '$' + somma;
+  checkedElementsCounter = 0;
+
 
   //Recupero la lista dei coupon sconto
   for(var x = 0; x < couponList.length; x++){
