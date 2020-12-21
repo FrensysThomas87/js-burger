@@ -4,6 +4,8 @@ var coupon = document.getElementsByTagName('input')[7];
 var totalPrice = document.getElementById('total-container').getElementsByTagName('span')[0];
 
 var sommaScontata = 0;
+
+//Somma dell'hamburger base
 var somma = 3;
 
 //Variabile che mi che mi controlla quanti elementi sono stati selezionati
@@ -37,9 +39,9 @@ for(var i = 0; i < checkboxes.length; i++){
 if(checkedElementsCounter < 2 || burgerName == '' ){
   alert('Devi selezionare 2 o più elementi e scrivere il nome dell\'hamburger')
   checkedElementsCounter = 0;
-
+  somma = 3;
   //Non mostro il prezzo finchè le condizioni sopra non vengono soddisfatte
-  totalPrice.innerText = '$3' ;
+  totalPrice.innerText = '$' + somma ;
   // Altrimenti scrivi la somma da spendere
 }else{
   totalPrice.innerText = '$' + somma;
