@@ -37,14 +37,17 @@ for(var i = 0; i < checkboxes.length; i++){
 if(checkedElementsCounter < 2 || burgerName == '' ){
   alert('Devi selezionare 2 o più elementi e scrivere il nome dell\'hamburger')
   checkedElementsCounter = 0;
+
+  //Non mostro il prezzo finchè le condizioni sopra non vengono soddisfatte
   totalPrice.innerText = '$3' ;
   // Altrimenti scrivi la somma da spendere
 }else{
   totalPrice.innerText = '$' + somma;
+
+  //Azzero il contatore altrimenti dopo il primo avviso il programma va avanti lo stesso
   checkedElementsCounter = 0;
 
-
-  //Recupero la lista dei coupon sconto
+//Recupero la lista dei coupon sconto
   for(var x = 0; x < couponList.length; x++){
 
     //Se il codice coupon corrisponde con la lista allora applico il 20% di sconto
