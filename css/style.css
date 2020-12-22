@@ -8,15 +8,13 @@
 
 
 
-#wrapper,
-.container{
+#wrapper{
   margin: 0 auto;
+  width: 1100px;
+  height:100vh;
 }
 
-#wrapper{
-  width: 1100px;
-  height: calc(100vh - 70px);
-}
+
 
 
 
@@ -27,11 +25,7 @@
 
 }
 
-.container{
-  width: 1000px;
-  margin-top: 50px;
 
-}
 
 .flex{
   display: flex;
@@ -53,6 +47,11 @@ header img{
 }
 
 /*END HEADER*/
+
+main{
+  height: calc(100vh - 190px);
+  overflow-y: auto;
+}
 
 /*NOME HAMBURGER*/
 input[name=fname-burger]{
@@ -100,6 +99,7 @@ input[name=fname-burger]{
 #checkbox-container span{
   margin-left: 10px;
   color: #d82850;
+  position: relative;
 }
 
 
@@ -110,6 +110,10 @@ input[name=fname-burger]{
   height: 12px;
   background-color: #d82850;
 
+}
+
+#checkbox-container span{
+  position:relative;
 }
 
  #checkbox-container .checkbox-left div:first-of-type  {
@@ -142,17 +146,20 @@ input[name=fname-burger]{
   right: 43px;
 }
 
-/* #checkbox-container .checkbox-left:nth-child(2) .checkmark{
-top: 0px;
-left: 0px;
-}  */
+#checkbox-container input[type=checkbox]:checked + span:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-55%);
+  z-index: 1;
+  content: "x";
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+}
 
 
 
-
-
-
-/*END CUSTOMIZZAZIONE CHECKBOX*/
 
 /*END CUSTOMIZZAZIONE CHECKBOX*/
 
