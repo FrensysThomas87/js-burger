@@ -16,10 +16,6 @@
 
 
 
-
-
-
-
 .yellow-bg{
   background-color: #f8b040;
 
@@ -51,6 +47,8 @@ header img{
 main{
   height: calc(100vh - 190px);
   overflow-y: auto;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 /*NOME HAMBURGER*/
@@ -92,9 +90,9 @@ input[name=fname-burger]{
   vertical-align: super;
 }
 
-#checkbox-container input[type=checkbox]{
+/* #checkbox-container input[type=checkbox]{
   visibility: hidden;
-}
+} */
 
 #checkbox-container span{
   margin-left: 10px;
@@ -104,49 +102,65 @@ input[name=fname-burger]{
 
 
 /*CUSTOMIZZAZIONE CHECKBOX*/
+
+/* #checkbox-container input[type=checkbox]{
+  visibility: hidden;
+} */
+
+
+
+
 .checkmark{
   position: absolute;
   width: 12px;
   height: 12px;
   background-color: #d82850;
-
 }
+
+.fa.fa-check{
+  position: relative;
+  transform: translateY(-30%);
+  display: none;
+}
+
+
+
 
 #checkbox-container span{
   position:relative;
 }
 
  #checkbox-container .checkbox-left div:first-of-type  {
-  top: 20px;
-  left: 129px;
+  top: 19px;
+  left: 134px;
 }
 
 #checkbox-container .checkbox-left div:nth-of-type(2)  {
-  top: 85px;
-  left: 110px;
+  top: 84px;
+  left: 114px;
 }
 
 #checkbox-container .checkbox-left div:nth-of-type(3)  {
-  top: 149px;
-  left: 136px;
+  top: 148px;
+  left: 142px;
 }
 
 #checkbox-container .checkbox-right div:first-of-type  {
-  top: 20px;
-  right: 52px;
+  top: 19px;
+  right: 51px;
 }
 
 #checkbox-container .checkbox-right div:nth-of-type(2)  {
-  top: 85px;
+  top: 84px;
   right: 52px;
 }
 
 #checkbox-container .checkbox-right div:nth-of-type(3)  {
-  top: 150px;
-  right: 43px;
+  top: 148px;
+  right: 46px;
 }
 
-#checkbox-container input[type=checkbox]:checked + span:before {
+/* #checkbox-container input[type=checkbox]:checked + span:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -156,7 +170,7 @@ input[name=fname-burger]{
   font-size: 20px;
   font-weight: 900;
   color: black;
-}
+} */
 
 
 
@@ -200,11 +214,11 @@ input[name=fname-burger]{
 footer{
   background-color: #d82850;
   height: 70px;
-  width: 1100px;
+  width: 1050px;
   color: #fff;
   justify-content: space-between;
   padding: 0 50px;
-  margin: 0 auto;
+
 }
 
 footer span{
