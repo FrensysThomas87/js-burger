@@ -1,7 +1,7 @@
 var checkboxes = document.getElementById('checkbox-container').getElementsByTagName('input');
 var burgerName = document.getElementsByTagName('input')[0];
 var coupon = document.getElementsByTagName('input')[7];
-var totalPrice = document.getElementById('total-container').getElementsByTagName('span')[0];
+var totalPrice = document.getElementById('total-container').getElementsByTagName('span')[1];
 
 var discount = 20;
 var sommaScontata = 0;
@@ -43,10 +43,10 @@ if(checkedElementsCounter < 2 || burgerName == '' ){
   checkedElementsCounter = 0;
   somma = baseHamburgerCost;
   //Non mostro il prezzo finchè le condizioni sopra non vengono soddisfatte
-  totalPrice.innerText = '$' + somma ;
+  totalPrice.innerText = '$ ' + somma ;
   // Altrimenti scrivi la somma da spendere
 }else{
-  totalPrice.innerText = '$' + somma;
+  totalPrice.innerText = '$ ' + somma;
 
   //Azzero il contatore altrimenti dopo il primo avviso il programma va avanti lo stesso
   checkedElementsCounter = 0;
@@ -57,7 +57,7 @@ if(checkedElementsCounter < 2 || burgerName == '' ){
     //Se il codice coupon corrisponde con la lista allora applico il 20% di sconto
     if(coupon.value === couponList[x]){
     sommaScontata = somma - (somma / 100) * discount;
-    totalPrice.innerText = '$' + sommaScontata + ' con ' + discount + '% di sconto !!!!';
+    totalPrice.innerText = '$ ' + sommaScontata + ' con ' + discount + '% di sconto !!!!';
   }
 
 
