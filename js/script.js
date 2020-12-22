@@ -4,11 +4,11 @@ var coupon = document.getElementsByTagName('input')[7];
 var totalPrice = document.getElementById('total-container').getElementsByTagName('span')[0];
 
 var discount = 20;
-
 var sommaScontata = 0;
 
 //Somma dell'hamburger base
-var somma = 3;
+var baseHamburgerCost = 3;
+var somma = 0;
 
 //Variabile che mi che mi controlla quanti elementi sono stati selezionati
 var checkedElementsCounter = 0;
@@ -23,8 +23,8 @@ document.getElementsByTagName('button')[0].addEventListener("click", function(){
 //Recupero il valore di burgerName quando clicco sul pulsante
 burgerName = document.getElementsByTagName('input')[0].value;
 
-//Ad ogni click del pulsante riporto la somma a zero
-somma = 3;
+//Ad ogni click del pulsante resetto la somma al suo costo base
+somma = baseHamburgerCost;
 var selezionato = false;
 
 //Ciclo all'interno delle checkboxes
@@ -41,7 +41,7 @@ for(var i = 0; i < checkboxes.length; i++){
 if(checkedElementsCounter < 2 || burgerName == '' ){
   alert('Devi selezionare 2 o più elementi e scrivere il nome dell\'hamburger')
   checkedElementsCounter = 0;
-  somma = 3;
+  somma = baseHamburgerCost;
   //Non mostro il prezzo finchè le condizioni sopra non vengono soddisfatte
   totalPrice.innerText = '$' + somma ;
   // Altrimenti scrivi la somma da spendere
@@ -57,7 +57,7 @@ if(checkedElementsCounter < 2 || burgerName == '' ){
     //Se il codice coupon corrisponde con la lista allora applico il 20% di sconto
     if(coupon.value === couponList[x]){
     sommaScontata = somma - (somma / 100) * discount;
-    totalPrice.innerText = '$' + sommaScontata + ' con ' + discount + '% di sconto !!!!   ';
+    totalPrice.innerText = '$' + sommaScontata + ' con ' + discount + '% di sconto !!!!';
   }
 
 
