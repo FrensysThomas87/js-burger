@@ -1,3 +1,5 @@
+/*UTILITIES*/
+
 *{
   padding: 0;
   margin: 0;
@@ -35,6 +37,9 @@
   display: flex;
 }
 
+/*END UTILITIES*/
+
+/*HEADER*/
 header{
   padding: 50px 0 70px 50px;
   position: relative;
@@ -47,18 +52,23 @@ header img{
   right: -20px;
 }
 
+/*END HEADER*/
 
-
+/*NOME HAMBURGER*/
 input[name=fname-burger]{
   margin: 30px 0 30px 0;
   border: 0;
   font-size: 20px;
 }
 
+/*END NOME HAMBURGER*/
+
+/*CHECKBOX*/
 #checkbox-container{
   width: 700px;
   justify-content: space-between;
   margin-top: 20px;
+  position: relative;
 }
 
 #checkbox-container .checkbox-left,
@@ -83,11 +93,72 @@ input[name=fname-burger]{
   vertical-align: super;
 }
 
+#checkbox-container input[type=checkbox]{
+  visibility: hidden;
+}
+
 #checkbox-container span{
   margin-left: 10px;
   color: #d82850;
 }
 
+
+/*CUSTOMIZZAZIONE CHECKBOX*/
+.checkmark{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #d82850;
+
+}
+
+ #checkbox-container .checkbox-left div:first-of-type  {
+  top: 20px;
+  left: 129px;
+}
+
+#checkbox-container .checkbox-left div:nth-of-type(2)  {
+  top: 85px;
+  left: 110px;
+}
+
+#checkbox-container .checkbox-left div:nth-of-type(3)  {
+  top: 149px;
+  left: 136px;
+}
+
+#checkbox-container .checkbox-right div:first-of-type  {
+  top: 20px;
+  right: 52px;
+}
+
+#checkbox-container .checkbox-right div:nth-of-type(2)  {
+  top: 85px;
+  right: 52px;
+}
+
+#checkbox-container .checkbox-right div:nth-of-type(3)  {
+  top: 150px;
+  right: 43px;
+}
+
+/* #checkbox-container .checkbox-left:nth-child(2) .checkmark{
+top: 0px;
+left: 0px;
+}  */
+
+
+
+
+
+
+/*END CUSTOMIZZAZIONE CHECKBOX*/
+
+/*END CUSTOMIZZAZIONE CHECKBOX*/
+
+/*END CHECKBOX*/
+
+/*DISCOUNT COUPON*/
 #discount-container{
   margin-top: 25px;
   margin-bottom: 20px;
@@ -99,6 +170,10 @@ input[name=fname-burger]{
   border-radius: 2px;
   width: 650px;
 }
+
+/*END DISCOUNT COUPON*/
+
+/*BUTTON*/
 
 .button-container{
   width: 100%;
@@ -112,7 +187,9 @@ input[name=fname-burger]{
   border: none;
   cursor: pointer;
 }
+/*END BUTTON*/
 
+/*FOOTER*/
 footer{
   background-color: #d82850;
   height: 70px;
@@ -131,3 +208,5 @@ footer span{
 #total-container{
   justify-content: space-between;
 }
+
+/*END FOOTER*/
