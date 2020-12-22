@@ -3,6 +3,8 @@ var burgerName = document.getElementsByTagName('input')[0];
 var coupon = document.getElementsByTagName('input')[7];
 var totalPrice = document.getElementById('total-container').getElementsByTagName('span')[0];
 
+var discount = 20;
+
 var sommaScontata = 0;
 
 //Somma dell'hamburger base
@@ -54,8 +56,8 @@ if(checkedElementsCounter < 2 || burgerName == '' ){
 
     //Se il codice coupon corrisponde con la lista allora applico il 20% di sconto
     if(coupon.value === couponList[x]){
-    sommaScontata = somma - (somma / 100) * 20;
-    totalPrice.innerText = '$' + sommaScontata + ' con 20% di sconto !!!!';
+    sommaScontata = somma - (somma / 100) * discount;
+    totalPrice.innerText = '$' + sommaScontata + ' con ' + discount + '% di sconto !!!!   ';
   }
 
 
