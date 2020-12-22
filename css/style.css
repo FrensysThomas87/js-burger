@@ -9,12 +9,15 @@
 #wrapper,
 .container{
   margin: 0 auto;
+
 }
 
 #wrapper{
   width: 1100px;
-  height: 100vh;
+  height:calc( 100vh - 70px);
 }
+
+
 
 .yellow-bg{
   background-color: #f8b040;
@@ -109,12 +112,11 @@ input[name=fname-burger]{
 footer{
   background-color: #d82850;
   height: 70px;
-  position: absolute;
-  bottom: 0;
   width: 1100px;
   color: #fff;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 50px;
+  margin: 0 auto;
 }
 
 footer span{

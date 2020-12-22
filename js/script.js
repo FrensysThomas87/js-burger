@@ -1,7 +1,7 @@
 var checkboxes = document.getElementById('checkbox-container').getElementsByTagName('input');
 var burgerName = document.getElementsByTagName('input')[0];
 var coupon = document.getElementsByTagName('input')[7];
-var totalPrice = document.getElementById('total-container').getElementsByTagName('span')[1];
+var totalPrice = document.getElementById('total-container').getElementsByTagName('strong')[1];
 
 var discount = 20;
 var sommaScontata = 0;
