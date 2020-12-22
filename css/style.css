@@ -10,7 +10,7 @@
 }
 
 #wrapper{
-  width: 1200px;
+  width: 1100px;
   height: 100vh;
 }
 
@@ -20,11 +20,16 @@
 }
 
 .container{
-  width: 100px;
+  width: 1000px;
+  margin-top: 50px;
+}
+
+.flex{
+  display: flex;
 }
 
 header{
-  padding: 50px 0 50px 50px;
+  padding: 50px 0 70px 50px;
   position: relative;
   height: 10px;
 }
@@ -33,4 +38,36 @@ header img{
   position: absolute;
   top: -48px;
   right: -20px;
+}
+
+input[name=fname-burger]{
+  margin: 30px 0 30px 0;
+  border: 0;
+  font-size: 20px;
+}
+
+#checkbox-container{
+  width: 700px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#checkbox-container .checkbox-left,
+#checkbox-container .checkbox-right{
+  width: 200px;
+}
+
+.checkbox-left img,
+.checkbox-right img{
+  width: 50px;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+.checkbox-left label,
+.checkbox-right label,
+.checkbox-left input[type=checkbox],
+.checkbox-right input[type=checkbox]{
+  margin-left: 15px;
+  vertical-align: super;
 }
