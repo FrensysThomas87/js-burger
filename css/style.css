@@ -53,7 +53,8 @@ input[name=fname-burger]{
 }
 
 #checkbox-container .checkbox-left,
-#checkbox-container .checkbox-right{
+#checkbox-container .checkbox-right
+{
   width: 200px;
 }
 
@@ -67,7 +68,25 @@ input[name=fname-burger]{
 .checkbox-left label,
 .checkbox-right label,
 .checkbox-left input[type=checkbox],
-.checkbox-right input[type=checkbox]{
+.checkbox-right input[type=checkbox],
+#checkbox-container span{
   margin-left: 15px;
   vertical-align: super;
+}
+
+#checkbox-container span{
+  margin-left: 10px;
+  color: #d82850;
+}
+
+#discount-container{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+#discount-container input[type=text]{
+  border: 0;
+  background-color: #f0e8c8;
+  border-radius: 2px;
+  width: 600px;
 }
