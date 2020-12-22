@@ -6,42 +6,49 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Create your Burger</h1>
+    <div id="wrapper">
+      <header class="yellow-bg">
+        <h1>Create your Burger</h1>
+        <img src="img/burger-top.png" alt="">
+      </header>
 
-    <!-- Area dove inserire il nome dell'hamburger -->
-    <input type="text" name="fname"  placeholder="Name Your Burger" value="">
-    <h2>Ingredients</h2>
 
-    <!-- Lista ingredienti da selezionare tramite ceckboxes -->
-    <div id="checkbox-container">
-      <label for="cheese">Cheese</label>
-      <input type="checkbox" id="cheese" value="5"> <br>
-      <label for="egg">Egg</label>
-      <input type="checkbox" id="egg" value="3"> <br>
-      <label for="mustard">Mustard</label>
-      <input type="checkbox" id="mustard" value="3"> <br>
-      <label for="tomato">Tomato</label>
-      <input type="checkbox" id="tomato" value="2"> <br>
-      <label for="lettuce">Lettuce</label>
-      <input type="checkbox" id="lettuce" value="1"> <br>
-      <label for="ketchup">Ketchup</label>
-      <input type="checkbox" id="ketchup" value="6">
+      <!-- Area dove inserire il nome dell'hamburger -->
+      <input type="text" name="fname"  placeholder="Name Your Burger" value="">
+      <h2>Ingredients</h2>
+
+      <!-- Lista ingredienti da selezionare tramite ceckboxes -->
+      <div id="checkbox-container">
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" id="cheese" value="5"> <br>
+        <label for="egg">Egg</label>
+        <input type="checkbox" id="egg" value="3"> <br>
+        <label for="mustard">Mustard</label>
+        <input type="checkbox" id="mustard" value="3"> <br>
+        <label for="tomato">Tomato</label>
+        <input type="checkbox" id="tomato" value="2"> <br>
+        <label for="lettuce">Lettuce</label>
+        <input type="checkbox" id="lettuce" value="1"> <br>
+        <label for="ketchup">Ketchup</label>
+        <input type="checkbox" id="ketchup" value="6">
+      </div>
+
+      <!-- Area dove inserire il codice sconto -->
+      <div id="discount-container">
+        <label for="coupon">Discount Coupon</label>
+        <input type="text" id="coupon" placeholder="123456ASFGGDF">
+      </div>
+
+      <!-- Tasto per calcolare il totale -->
+      <button type="button" name="button">Calculate</button>
+
+      <!-- div che contiene il totale -->
+      <div id="total-container">
+        Your Price is  <span>$3</span>
+      </div>
+
+      <script src="js/script.js" charset="utf-8"></script>
     </div>
 
-    <!-- Area dove inserire il codice sconto -->
-    <div id="discount-container">
-      <label for="coupon">Discount Coupon</label>
-      <input type="text" id="coupon" placeholder="123456ASFGGDF">
-    </div>
-
-    <!-- Tasto per calcolare il totale -->
-    <button type="button" name="button">Calculate</button>
-
-    <!-- div che contiene il totale -->
-    <div id="total-container">
-      Your Price is  <span>$3</span>
-    </div>
-
-    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
