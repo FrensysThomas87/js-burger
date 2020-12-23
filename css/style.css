@@ -87,7 +87,7 @@ input[name=fname-burger]{
 .checkbox-right input[type=checkbox],
 #checkbox-container span{
   margin-left: 15px;
-  vertical-align: super;
+  /* vertical-align: super; */
 }
 
 /* #checkbox-container input[type=checkbox]{
@@ -108,16 +108,16 @@ input[name=fname-burger]{
   visibility: hidden;
   }
 
-.checkmark{
+.fa.fa-square{
   position: absolute;
   width: 12px;
   height: 12px;
-  background-color: #d82850;
-  top:20px;
+  color: #d82850;
+  top:23px;
   left: 133px;
 }
 
-#checkbox-container .checkbox-left .checkbox-row:nth-child(2) .checkmark{
+#checkbox-container .checkbox-left .checkbox-row:nth-child(2) .fa.fa-square{
   left: 120px;
 }
 
@@ -127,12 +127,14 @@ input[name=fname-burger]{
 
 .fa.fa-check{
   position: relative;
-  transform: translateY(-30%);
+  transform: translateY(-100%);
   display: none;
   z-index: 10;
+  color: #000;
+  font-size: 20px;
 }
 
-#checkbox-container input[type="checkbox"]:checked + .checkmark .fa.fa-check{
+#checkbox-container input[type="checkbox"]:checked + .fa.fa-square .fa.fa-check{
   display: block;
 
 }
